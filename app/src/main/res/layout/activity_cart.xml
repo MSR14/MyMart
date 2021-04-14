@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cart"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:textStyle="bold"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cartItems"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            xmlns:tools="http://schemas.android.com/tools"
+            tools:listitem="@layout/row_cartitem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pricesLayout"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sTotal"
+                android:text="Sub Total"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sValue"
+                android:text="Rs 10"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dFeeTotal"
+                android:text="Delivary Fee"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/sTotal"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dFeeValue"
+                android:text="Rs 12"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/sValue"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/priceTotal"
+                android:text="Total Payable"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/dFeeTotal"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/priceValueT"
+                android:text="Rs 22"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/dFeeValue"
+                android:textColor="@color/black"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/checkoutBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/grey"
+            android:padding="15dp"
+            android:text="Place order"
+            android:textColor="@color/white" />
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+
+
+
+
+
+
+
+
+

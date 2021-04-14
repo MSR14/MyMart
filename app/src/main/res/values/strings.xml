@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MyMart</string>
+    <string name="text2"> Register here for user</string>
+    <string name="text1">Register Here for seller</string>
+    <string name="title_activity_main_user">MainActivity</string>
+    <string name="title_home">Products</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Orders</string>
+    <string name="title_activity_main_buyer">MainBuyer</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+</resources>
